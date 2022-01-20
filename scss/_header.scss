@@ -1,0 +1,13 @@
+.header {
+    padding: 73px 0 48px;
+
+    span {
+        letter-spacing: 5px;
+        font-size: $span-font-size;
+        line-height: $span-line-height;
+    }
+
+    @include tablet {
+        padding: 112px 0 39px;
+    }
+}

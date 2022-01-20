@@ -1,0 +1,39 @@
+:root {
+    --primary-color: black;
+    --secondary-color: #565656;
+
+    --primary-font-size: 19px;
+    --heading-1-font-size: 48px;
+    --heading-2-font-size: 33px;
+    --heading-3-font-size: 23px;
+    --span-font-size: 16px;
+
+    --primary-line-height: 32px;
+    --heading-1-line-height: 64px;
+    --heading-2-line-height: 50px;
+    --heading-3-line-height: 38.18px;
+    --span-line-height: 24px;
+
+    --phone-width: 320px;
+    --tablet-width: 768px;
+    --desktop-width: 1440px;
+}
+
+$primary-color: var(--primary-color, black);
+$secondary-color: var(--secondary-color, #565656);
+
+$primary-font-size: var(--primary-font-size, 19px);
+$heading-1-font-size: var(--heading-1-font-size, 48px);
+$heading-2-font-size: var(--heading-2-font-size, 33px);
+$heading-3-font-size: var(--heading-3-font-size, 23px);
+$span-font-size: var(--span-font-size, 16px);
+
+$primary-line-height: var(--primary-line-height, 32px);
+$heading-1-line-height: var(--heading-1-line-height, 64px);
+$heading-2-line-height: var(--heading-2-line-height, 50px);
+$heading-3-line-height: var(--heading-3-line-height, 38.18px);
+$span-line-height: var(--span-line-height, 24px);
+
+$phone-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;

@@ -1,10 +1,263 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Red+Hat+Display&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --primary-color: black;
+  --secondary-color: #565656;
+  --primary-font-size: 19px;
+  --heading-1-font-size: 48px;
+  --heading-2-font-size: 33px;
+  --heading-3-font-size: 23px;
+  --span-font-size: 16px;
+  --primary-line-height: 32px;
+  --heading-1-line-height: 64px;
+  --heading-2-line-height: 50px;
+  --heading-3-line-height: 38.18px;
+  --span-line-height: 24px;
+  --phone-width: 320px;
+  --tablet-width: 768px;
+  --desktop-width: 1440px;
+}
+
 body {
   font-family: "Lato", sans-serif;
+  color: var(--secondary-color, #565656);
+  font-size: var(--primary-font-size, 19px);
+  line-height: var(--primary-line-height, 32px);
+  font-weight: 400;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 77.78%;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 100%;
+    margin: 0 16px;
+  }
+}
+
+h1, h2, h3 {
+  font-family: "Red Hat Display", sans-serif;
+  color: var(--primary-color, black);
 }
 
 h1 {
-  font-family: "Red Hat Display", sans-serif;
+  font-size: var(--heading-1-font-size, 48px);
+  line-height: var(--heading-1-line-height, 64px);
+  letter-spacing: 0.5px;
+  margin-bottom: 64px;
+}
+
+h2 {
+  font-size: var(--heading-2-font-size, 33px);
+  line-height: var(--heading-2-line-height, 50px);
+  letter-spacing: 1px;
+  margin-bottom: 52px;
+}
+
+h3 {
+  font-size: var(--heading-3-font-size, 23px);
+  line-height: var(--heading-3-line-height, 38.18px);
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  h3 {
+    margin-bottom: 16px;
+  }
+}
+
+source, img {
+  padding-bottom: 50px;
+}
+
+p {
+  margin-bottom: 32px;
+}
+
+.header {
+  padding: 73px 0 48px;
+}
+.header span {
+  letter-spacing: 5px;
+  font-size: var(--span-font-size, 16px);
+  line-height: var(--span-line-height, 24px);
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 112px 0 39px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    display: none;
+  }
+}
+
+h2 {
+  display: none;
+}
+@media (max-width: 768px) {
+  h2 {
+    display: block;
+  }
+}
+
+.banner source, .banner img {
+  margin-bottom: 130px;
+}
+@media (max-width: 768px) {
+  .banner source, .banner img {
+    margin-bottom: 56px;
+  }
+}
+@media (max-width: 320px) {
+  .banner source, .banner img {
+    margin-bottom: 48px;
+  }
+}
+
+.section {
+  margin-bottom: 130px;
+}
+@media (max-width: 768px) {
+  .section {
+    margin-bottom: 56px;
+  }
+}
+@media (max-width: 320px) {
+  .section {
+    margin-bottom: 64px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

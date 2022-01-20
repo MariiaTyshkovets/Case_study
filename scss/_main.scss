@@ -1,0 +1,39 @@
+h1 {
+    @include tablet {
+        display: none;
+    }
+}
+
+h2 {
+    display: none;
+
+    @include tablet {
+        display: block;
+    }   
+}
+
+.banner {
+    source, img {
+        margin-bottom: 130px;
+
+        @include tablet {
+            margin-bottom: 56px;
+        }
+
+        @include phone {
+            margin-bottom: 48px;
+        }
+    }
+}
+
+.section {
+    margin-bottom: 130px;
+
+    @include tablet {
+        margin-bottom: 56px;
+    }
+
+    @include phone {
+        margin-bottom: 64px;
+    }
+}

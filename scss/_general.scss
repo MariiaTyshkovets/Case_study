@@ -1,15 +1,55 @@
 body {
     font-family: 'Lato', sans-serif;
+    color: $secondary-color;
+    font-size: $primary-font-size;
+    line-height: $primary-line-height;
+    font-weight: 400;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 77.78%;
+
+    @include tablet {
+        max-width: 100%;
+        margin: 0 16px;
+    }
+}
+
+h1, h2, h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    color: $primary-color;
 }
 
 h1 {
-    font-family: 'Red Hat Display', sans-serif;
+    font-size: $heading-1-font-size;
+    line-height: $heading-1-line-height;
+    letter-spacing: 0.5px;
+    margin-bottom: 64px;
 }
 
 h2 {
-    
+    font-size: $heading-2-font-size;
+    line-height: $heading-2-line-height;
+    letter-spacing: 1px;
+    margin-bottom: 52px;
 }
 
 h3 {
+    font-size: $heading-3-font-size;
+    line-height: $heading-3-line-height;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
 
+    @include tablet {
+        margin-bottom: 16px;
+    }
+}
+
+source, img {
+    padding-bottom: 50px;
+}
+
+p {
+    margin-bottom: 32px;
 }
